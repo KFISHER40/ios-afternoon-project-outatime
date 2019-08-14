@@ -18,6 +18,14 @@ class TimeCircuitsViewController: UIViewController {
     
     @IBOutlet weak var speedLabel: UILabel!
     
+    var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEE, MMM d, ''yy"
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return formatter
+    }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

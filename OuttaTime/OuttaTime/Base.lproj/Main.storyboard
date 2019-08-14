@@ -88,6 +88,9 @@
                                 <rect key="frame" x="114" y="771" width="187" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="SET DESTINATION TIME"/>
+                                <connections>
+                                    <segue destination="FVy-GO-niF" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="QEi-sr-lf7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -112,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgO-6x-viw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="862.31884057971024" y="-25.446428571428569"/>
+            <point key="canvasLocation" x="813" y="-25"/>
         </scene>
         <!--Date Picker View Controller-->
         <scene sceneID="fO7-nM-Z3q">
@@ -134,13 +137,13 @@
                         <viewLayoutGuide key="safeArea" id="ozX-j7-wRa"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Cancel" width="100" id="ohj-8P-Jjk">
+                        <barButtonItem style="plain" systemItem="cancel" id="ohj-8P-Jjk">
                             <connections>
                                 <action selector="cancelButtonPressed:" destination="FVy-GO-niF" id="ajR-Be-WP8"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem width="238" style="plain" systemItem="fixedSpace" id="zQv-WN-FlM"/>
-                        <barButtonItem title="Done" id="sXt-si-F3i">
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="zQv-WN-FlM"/>
+                        <barButtonItem style="plain" systemItem="done" id="sXt-si-F3i">
                             <connections>
                                 <action selector="doneButtonPressed:" destination="FVy-GO-niF" id="LXd-Ot-n30"/>
                             </connections>
@@ -153,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAU-Wn-jkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1673.913043478261" y="-20.089285714285712"/>
+            <point key="canvasLocation" x="1628" y="-25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gnF-sV-rse">
